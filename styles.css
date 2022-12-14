@@ -14,6 +14,31 @@ body{
     align-items: center;
 }
 
+
+h1{
+    font-size: 60px;
+}
+
+h2{
+    font-size: 28px;
+}
+
+h3{
+    font-size: 24px;
+}
+
+p{
+    font-size: 20px;
+}
+
+figcaption{
+    font-size: 16px;
+}
+
+li{
+    font-size: 24px;
+}
+
 /* HEADER SECTION */
 
 #page-header{
@@ -41,7 +66,6 @@ body{
 
 #title-container{
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 60px;
     margin-bottom: 20px;
 }
 
@@ -50,16 +74,12 @@ body{
 }
 
 #quote-container p{
-    font-size: 24px;
     margin-bottom: 10px;
 }
 
 #quote-container figcaption{
-    font-size: 18px;
     padding-left: 30px;
 }
-
-
 
 /* INFO SECTION */
 
@@ -69,7 +89,6 @@ body{
     justify-content: center;
     align-items: center;
     padding: 70px 0;
-    font-size: 24px;
 }
 
 #info-section-col1{
@@ -92,18 +111,15 @@ body{
 }
 
 #tribute-info >h2{
-    font-size: 32px;
     padding-bottom: 20px;
 }
 
 #tribute-info >h3 {
-    font-size: 24px;
     padding-bottom: 20px;
 }
 
 #tribute-info >p {
     text-align: justify;
-    font-size: 20px;
     padding-bottom: 20px;
 }
 
@@ -115,7 +131,6 @@ body{
     justify-content: center;
     align-items: center;
     padding: 70px 0;
-    font-size: 20px;
     border-top: solid #6B6B6B;
     border-bottom: solid #6B6B6B;
 }
@@ -128,12 +143,10 @@ body{
 }
 
 #discography-section h2{
-    font-size: 32px;
     padding-bottom: 20px;
 }
 
 #discography-section h3{
-    font-size: 24px;
     padding-bottom: 10px;
 }
 
@@ -161,4 +174,86 @@ a:visited{
 
 a:hover{
     color: #6B6B6B;
+}
+
+@media screen and (max-width: 1350px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    p,
+    li {
+        font-size: 16px;
+    }
+
+    figcaption {
+        font-size: 14px;
+    }
+
+    #more-info-section p {
+        font-size: 20px;
+    }
+
+    #tribute-info{
+        padding: 70px 100px;
+    }
+}
+
+@media screen and (max-width: 950px){
+    #page-header{
+        flex-direction: column;
+    }
+
+    #image-div{
+        margin-right: 0;
+    }
+
+    #header-container{
+        flex-direction: row;
+        align-items: center;
+        border: 10px black solid;
+    }
+
+    #title-container{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+
+    #quote-container{
+        margin-left: 50px;
+        margin-right: 20px;
+    }
+   
+    #info-section{
+        padding: 30px;
+        padding-left: 40px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #info-section-col1 li{
+        margin-left: 25px;
+    }
+    
+    #tribute-info{
+        padding: 30px 50px;
+    }
+
+    #discography-section{
+        padding: 30px 0;
+    }
+
+    #more-info-section p {
+        font-size: 16px;
+    }
+
 }
